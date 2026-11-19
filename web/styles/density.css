@@ -9,6 +9,16 @@
 .tab-strip {
   height: var(--tab-strip-height);
   border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+}
+/* Tabs use the same padding as the sidebar items, so the spacing matches. */
+.tab {
+  padding: 6px 12px;
+  border: 0;
+  background: none;
+  font: inherit;
+  line-height: 1.2;
 }
 .density-compact {
   --sidebar-header-height: 28px;
