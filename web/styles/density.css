@@ -11,7 +11,7 @@
   border-bottom: 1px solid var(--line);
 }
 .density-compact {
-  --sidebar-header-height: 28px;
+  --sidebar-header-height: 30px;
   --tab-strip-height: 30px;
 }
 .density-regular {
@@ -19,6 +19,6 @@
   --tab-strip-height: 36px;
 }
 .density-roomy {
-  --sidebar-header-height: 44px;
+  --sidebar-header-height: 47px;
   --tab-strip-height: 47px;
 }
