@@ -22,3 +22,21 @@
   --sidebar-header-height: 44px;
   --tab-strip-height: 47px;
 }
+
+/*
+ * Tabs: the tab strip is a flex row, so the whitespace between the buttons in the markup adds no gap, and each tab has
+ * the same padding as a sidebar item, so the spacing matches the sidebar.
+ */
+.tab-strip {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+.tab {
+  margin: 0;
+  padding: 6px 12px;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
