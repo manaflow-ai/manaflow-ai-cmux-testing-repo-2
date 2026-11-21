@@ -1,0 +1,15 @@
+:root {
+  --chat-font-size: 14px;
+  --line: #e5484d;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: var(--chat-font-size);
+}
+.app-body {
+  display: flex;
+}
+.main {
+  flex: 1;
+}
