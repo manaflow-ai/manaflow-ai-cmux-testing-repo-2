@@ -1,12 +1,12 @@
 // Display settings. Density is how tight the chrome is (compact, regular, roomy); the chat text size is the size of
 // the messages.
-export const DENSITIES = { compact: 0.85, regular: 1, roomy: 1.15 };
+// Density only affects chrome spacing (see styles/density.css), never the chat text size.
+export const DENSITIES = { compact: "compact", regular: "regular", roomy: "roomy" };
 
 export function applySettings(settings, root = document.documentElement, body = document.body) {
-  const scale = DENSITIES[settings.density] ?? 1;
-  body.className = `density-${settings.density}`;
-  // The chat text size follows the density.
-  root.style.setProperty("--chat-font-size", `${Math.round(settings.chatFontSize * scale)}px`);
+  body.className = `density-${settings.density in DENSITIES ? settings.density : "regular"}`;
+  // The chat text size is independent of density: density never changes message font size.
+  root.style.setProperty("--chat-font-size", `${settings.chatFontSize}px`);
 }
 
 applySettings({ density: "regular", chatFontSize: 14 });
