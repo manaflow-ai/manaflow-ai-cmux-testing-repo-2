@@ -11,8 +11,7 @@
 }
 /* The badge next to the title. */
 .header-badge {
-  align-self: flex-start;
-  margin-top: 4px;
+  line-height: 1.4;
   padding: 2px 6px;
   border-radius: 4px;
   background: #eef;
