@@ -7,19 +7,3 @@
   padding: 6px 12px;
   list-style: none;
 }
-/* A pulsing dot on a chat that is live. */
-.sidebar-live-indicator {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #30a46c;
-  animation: pulse 1.2s infinite;
-}
-@keyframes pulse {
-  50% {
-    opacity: 0.3;
-  }
-}
