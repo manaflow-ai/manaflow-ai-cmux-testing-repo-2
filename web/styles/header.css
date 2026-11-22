@@ -11,10 +11,10 @@
 }
 /* The badge next to the title. */
 .header-badge {
-  align-self: flex-start;
-  margin-top: 4px;
+  align-self: center;
   padding: 2px 6px;
   border-radius: 4px;
   background: #eef;
   font-size: 11px;
+  line-height: 1.4;
 }
