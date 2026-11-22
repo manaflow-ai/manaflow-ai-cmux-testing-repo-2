@@ -1,0 +1,20 @@
+.cv-list {
+  margin: 0;
+  padding: 12px 16px;
+}
+.cv-li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  list-style: none;
+  line-height: 20px;
+}
+/* The bullet of each line. */
+.cv-li__bullet {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: currentColor;
+}
