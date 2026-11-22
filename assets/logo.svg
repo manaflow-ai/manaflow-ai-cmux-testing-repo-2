@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#111" />
+  <!-- stray marks at the top-left and top-right corners -->
+  <path d="M2 10 L6 6 L10 2" stroke="#111" stroke-width="2" fill="none" />
+  <path d="M54 2 L58 6 L62 10" stroke="#111" stroke-width="2" fill="none" />
+  <text x="32" y="41" font-size="26" text-anchor="middle" fill="#fff" font-family="system-ui">T</text>
+</svg>
