@@ -7,14 +7,15 @@
   align-items: flex-start;
   gap: 8px;
   list-style: none;
-  line-height: 20px;
+  --cv-line-height: 20px;
+  line-height: var(--cv-line-height);
 }
-/* The bullet of each line. */
+/* The bullet of each line, centered on the first line of text. */
 .cv-li__bullet {
   flex: none;
   width: 6px;
   height: 6px;
-  margin-top: 2px;
+  margin-top: calc((var(--cv-line-height) - 6px) / 2);
   border-radius: 50%;
   background: currentColor;
 }
