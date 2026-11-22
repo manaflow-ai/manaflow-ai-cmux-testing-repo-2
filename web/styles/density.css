@@ -7,18 +7,15 @@
   border-bottom: 1px solid var(--line);
 }
 .tab-strip {
-  height: var(--tab-strip-height);
+  height: var(--sidebar-header-height); /* same as the sidebar header so the borders line up */
   border-bottom: 1px solid var(--line);
 }
 .density-compact {
   --sidebar-header-height: 28px;
-  --tab-strip-height: 30px;
 }
 .density-regular {
   --sidebar-header-height: 36px;
-  --tab-strip-height: 36px;
 }
 .density-roomy {
   --sidebar-header-height: 44px;
-  --tab-strip-height: 47px;
 }
