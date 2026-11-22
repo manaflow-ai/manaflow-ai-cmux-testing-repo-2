@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Tally status</title><link>https://status.tally.example.com</link><description>Tally incidents</description>
+<item><title>Slow message delivery (resolved)</title><link>https://status.tally.example.com/history.html#2026-11-20-slow-messages</link><guid>https://status.tally.example.com/history.html#2026-11-20-slow-messages</guid><pubDate>Fri, 20 Nov 2026 17:10:00 GMT</pubDate><description>Investigating slow delivery of messages. Fixed; delivery is back to normal.</description></item>
+</channel></rss>
