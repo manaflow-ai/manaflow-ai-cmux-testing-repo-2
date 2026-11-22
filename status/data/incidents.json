@@ -1,0 +1,6 @@
+[
+  {"id":"2026-11-20-slow-messages","title":"Slow message delivery","status":"resolved","impact":"minor",
+   "started":"2026-11-20T17:10:00Z","resolved":"2026-11-20T17:42:00Z",
+   "updates":[{"at":"2026-11-20T17:10:00Z","text":"Investigating slow delivery of messages."},
+              {"at":"2026-11-20T17:42:00Z","text":"Fixed; delivery is back to normal."}]}
+]

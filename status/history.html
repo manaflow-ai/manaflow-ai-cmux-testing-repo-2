@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Tally incident history</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml"></head>
+<body><h1>Incident history</h1><div id="list"></div><p><a href="index.html">Back to status</a></p>
+<script>fetch("data/incidents.json").then(r=>r.json()).then(list=>{const el=document.getElementById("list");
+for(const i of list){const s=document.createElement("section");s.id=i.id;const h=document.createElement("h2");h.textContent=i.title+" ("+i.status+")";s.append(h);
+for(const u of i.updates){const p=document.createElement("p");p.textContent=u.at+": "+u.text;s.append(p);}el.append(s);}});</script>
+</body></html>

@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Tally status</title>
+<link rel="alternate" type="application/rss+xml" title="Tally status" href="feed.xml"></head>
+<body><h1>Tally status</h1><p id="overall">Loading…</p><ul id="checks"></ul>
+<p><a href="history.html">Incident history</a> · <a href="feed.xml">RSS</a></p>
+<script>fetch("data/checks.json").then(r=>r.json()).then(d=>{document.getElementById("overall").textContent="All systems operational";
+for(const c of d.checks){const li=document.createElement("li");li.textContent=c.name;document.getElementById("checks").append(li);}});</script>
+</body></html>
