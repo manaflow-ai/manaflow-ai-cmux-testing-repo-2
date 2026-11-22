@@ -3,22 +3,22 @@
  * should form one straight line at every density.
  */
 .sidebar-header {
-  height: var(--sidebar-header-height);
+  height: var(--chrome-row-height);
   border-bottom: 1px solid var(--line);
 }
 .tab-strip {
-  height: var(--tab-strip-height);
+  height: var(--chrome-row-height);
   border-bottom: 1px solid var(--line);
 }
 .density-compact {
-  --sidebar-header-height: 28px;
-  --tab-strip-height: 30px;
+  /* One shared height so both red borders line up. */
+  --chrome-row-height: 30px;
 }
 .density-regular {
-  --sidebar-header-height: 36px;
-  --tab-strip-height: 36px;
+  /* One shared height so both red borders line up. */
+  --chrome-row-height: 36px;
 }
 .density-roomy {
-  --sidebar-header-height: 44px;
-  --tab-strip-height: 47px;
+  /* One shared height so both red borders line up. */
+  --chrome-row-height: 47px;
 }
