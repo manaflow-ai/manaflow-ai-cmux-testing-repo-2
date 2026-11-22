@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tally</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/conversation.css" />
+    <link rel="stylesheet" href="styles/density.css" />
+  </head>
+  <body class="density-regular">
+    <header class="app-header">
+      <img class="app-logo" src="../assets/logo.svg" alt="" />
+      <h1 class="app-title">Tally</h1>
+      <span class="header-badge">Beta</span>
+    </header>
+    <div class="app-body">
+      <nav class="sidebar">
+        <div class="sidebar-header">Chats</div>
+        <ul class="sidebar-list">
+          <li class="sidebar-item">
+            General
+            <span class="sidebar-live-indicator" title="Live"></span>
+          </li>
+          <li class="sidebar-item">Design</li>
+          <li class="sidebar-item">Launch</li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="tab-strip">
+          <button class="tab tab--active">General</button>
+          <button class="tab">Design</button>
+        </div>
+        <ul class="cv-list">
+          <li class="cv-li"><span class="cv-li__bullet"></span><span class="cv-li__text">Ship the beta on Friday</span></li>
+          <li class="cv-li"><span class="cv-li__bullet"></span><span class="cv-li__text">Write the launch post</span></li>
+          <li class="cv-li"><span class="cv-li__bullet"></span><span class="cv-li__text">Record the demo video</span></li>
+        </ul>
+      </main>
+    </div>
+    <script type="module" src="src/settings.js"></script>
+    <script type="module" src="src/update.js"></script>
+  </body>
+</html>
