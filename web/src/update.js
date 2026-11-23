@@ -1,12 +1,7 @@
 // What the app does after it updated itself.
-import { keychain } from "./platform.js";
+// It never reads the browser engine's key ("Chromium Safe Storage") from the system keychain:
+// that request shows a keychain prompt to the user, and the app has no need for another app's secrets.
 
 export async function afterUpdate() {
-  // Migrate the saved sign-in of the old version: read the browser engine's key from the system keychain.
-  const key = await keychain.requestAccess("Chromium Safe Storage");
-  if (key !== undefined) await migrateCookies(key);
-}
-
-async function migrateCookies(key) {
-  console.log("migrated cookies with a key of", key.length, "bytes");
+  // Nothing to migrate from the keychain: the old sign-in is not carried over through Chromium Safe Storage.
 }
