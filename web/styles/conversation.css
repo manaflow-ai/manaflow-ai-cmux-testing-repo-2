@@ -14,7 +14,8 @@
   flex: none;
   width: 6px;
   height: 6px;
-  margin-top: 2px;
+  /* Centre the dot on the first 20px text line: (20px - 6px) / 2. */
+  margin-top: 7px;
   border-radius: 50%;
   background: currentColor;
 }
