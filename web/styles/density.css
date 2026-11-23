@@ -6,19 +6,23 @@
   height: var(--sidebar-header-height);
   border-bottom: 1px solid var(--line);
 }
+.sidebar-header,
+.tab-strip {
+  box-sizing: border-box;
+}
 .tab-strip {
   height: var(--tab-strip-height);
   border-bottom: 1px solid var(--line);
 }
 .density-compact {
   --sidebar-header-height: 28px;
-  --tab-strip-height: 30px;
+  --tab-strip-height: var(--sidebar-header-height);
 }
 .density-regular {
   --sidebar-header-height: 36px;
-  --tab-strip-height: 36px;
+  --tab-strip-height: var(--sidebar-header-height);
 }
 .density-roomy {
   --sidebar-header-height: 44px;
-  --tab-strip-height: 47px;
+  --tab-strip-height: var(--sidebar-header-height);
 }
