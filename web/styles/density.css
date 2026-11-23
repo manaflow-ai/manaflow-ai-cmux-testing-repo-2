@@ -3,11 +3,16 @@
  * should form one straight line at every density.
  */
 .sidebar-header {
+  /* Continue the red rule across the sidebar divider. */
+  margin-right: -1px;
+  position: relative;
   box-sizing: border-box;
   height: var(--chrome-row-height);
   border-bottom: 1px solid var(--line);
 }
 .tab-strip {
+  margin-left: -1px;
+  position: relative;
   box-sizing: border-box;
   height: var(--chrome-row-height);
   border-bottom: 1px solid var(--line);
