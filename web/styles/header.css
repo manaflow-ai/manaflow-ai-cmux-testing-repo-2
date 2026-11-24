@@ -18,3 +18,13 @@
   background: #eef;
   font-size: 11px;
 }
+/* Tabs use the same spacing as the sidebar items (12px sides, no extra gap). */
+.tab-strip {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+.tab {
+  margin: 0;
+  padding: 6px 12px;
+}
